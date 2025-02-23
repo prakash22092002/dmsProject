@@ -5,22 +5,25 @@ import HomeCompo from "./components/HomeCompo";
 import DepartmentCompo from "./components/DepartmentCompo";
 import EmployeesCompo from "./components/EmployeesCompo";
 import NavBarCompo from "./components/NavBarCompo";
+import { DepartmentProvider } from "./context/context";
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className="min-h-screen bg-gray-50">
-        {/* nav bar  */}
-        <NavBarCompo />
+    <DepartmentProvider>
+      <BrowserRouter>
+        <div className="min-h-screen bg-gray-50">
+          {/* nav bar  */}
+          <NavBarCompo />
 
-        {/* Routing */}
-        <Routes>
-          <Route path="/" element={<HomeCompo />} />
-          <Route path="/department" element={<DepartmentCompo />} />
-          <Route path="/employees" element={<EmployeesCompo />} />
-          {/* <Route path="/employee/:id" element={<EmployeeDetailCompo />} /> */}
-        </Routes>
-      </div>
-    </BrowserRouter>
+          {/* Routing */}
+          <Routes>
+            <Route path="/" element={<HomeCompo />} />
+            <Route path="/department" element={<DepartmentCompo />} />
+            <Route path="/employees" element={<EmployeesCompo />} />
+            {/* <Route path="/employee/:id" element={<EmployeeDetailCompo />} /> */}
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </DepartmentProvider>
   );
 };
 
