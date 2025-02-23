@@ -1,45 +1,34 @@
-import { useQuery } from "@tanstack/react-query";
 import React from "react";
-import { getAllDepartments } from "../api/api.js";
-import CodeIcon from "@mui/icons-material/Code";
-import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
-import AddBusinessIcon from "@mui/icons-material/AddBusiness";
-import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
-import DesignServicesIcon from "@mui/icons-material/DesignServices";
+import { useDepartments } from "../context/context.jsx";
+import HourglassEmptyIcon from "@mui/icons-material/HourglassEmpty";
 
 const DepartmentCompo = () => {
+  // this is the data got from the context
   const {
-    data: allDepartmentsData,
-    isLoading,
-    isError,
-  } = useQuery({
-    queryKey: ["departments"],
-    queryFn: getAllDepartments,
-  });
+    departmentLogo,
+    allDepartmentsData,
+    isAllDepartmentsDataLoading,
+    isAllDepartmentDataError,
+  } = useDepartments();
 
-  if (isLoading) {
+  if (isAllDepartmentsDataLoading) {
     return (
       <div>
-        <p>LOADING ...</p>
+        <p>
+          LOADING...
+          <HourglassEmptyIcon />
+        </p>
       </div>
     );
   }
 
-  if (isError) {
+  if (isAllDepartmentDataError) {
     return (
       <div>
         <p>There is an error ...</p>
       </div>
     );
   }
-
-  const departmentLogo = {
-    1: <CodeIcon />,
-    2: <AddBusinessIcon className="text-green-600" />,
-    3: <MonetizationOnIcon className="text-yellow-600" />,
-    4: <ManageAccountsIcon className="text-orange-600" />,
-    5: <DesignServicesIcon className="text-red-600" />,
-  };
 
   return (
     <div className="p-6">
