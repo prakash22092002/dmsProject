@@ -36,168 +36,492 @@
         "employeeCount": 6
       }
     ],
-    
+
     "employees": [
-      {
-        "id": 101,
-        "name": "John Doe",
-        "departmentId": 1,
-        "position": "Senior Engineer",
-        "email": "john.doe@example.com",
-        "hireDate": "2018-05-12",
-        "salary": 95000,
-        "status": "Active",
-        "address": {
-          "street": "1234 Elm Street",
-          "city": "New York",
-          "state": "NY",
-          "zip": "10001"
-        }
-      },
-      {
-        "id": 102,
-        "name": "Jane Williams",
-        "departmentId": 1,
-        "position": "Software Engineer",
-        "email": "jane.williams@example.com",
-        "hireDate": "2020-08-15",
-        "salary": 80000,
-        "status": "Active",
-        "address": {
-          "street": "5678 Oak Avenue",
-          "city": "San Francisco",
-          "state": "CA",
-          "zip": "94105"
-        }
-      },
-      {
-        "id": 103,
-        "name": "Emily Davis",
-        "departmentId": 2,
-        "position": "Marketing Manager",
-        "email": "emily.davis@example.com",
-        "hireDate": "2019-07-30",
-        "salary": 70000,
-        "status": "Active",
-        "address": {
-          "street": "9876 Pine Road",
-          "city": "Los Angeles",
-          "state": "CA",
-          "zip": "90001"
-        }
-      },
-      {
-        "id": 104,
-        "name": "Daniel Brown",
-        "departmentId": 2,
-        "position": "Content Strategist",
-        "email": "daniel.brown@example.com",
-        "hireDate": "2021-03-25",
-        "salary": 60000,
-        "status": "Active",
-        "address": {
-          "street": "4321 Birch Lane",
-          "city": "Los Angeles",
-          "state": "CA",
-          "zip": "90001"
-        }
-      },
-      {
-        "id": 105,
-        "name": "James Smith",
-        "departmentId": 3,
-        "position": "Sales Manager",
-        "email": "james.smith@example.com",
-        "hireDate": "2017-06-10",
-        "salary": 80000,
-        "status": "Active",
-        "address": {
-          "street": "1234 Maple Street",
-          "city": "Chicago",
-          "state": "IL",
-          "zip": "60601"
-        }
-      },
-      {
-        "id": 106,
-        "name": "Olivia Taylor",
-        "departmentId": 3,
-        "position": "Sales Executive",
-        "email": "olivia.taylor@example.com",
-        "hireDate": "2020-11-15",
-        "salary": 55000,
-        "status": "Active",
-        "address": {
-          "street": "5678 Cedar Avenue",
-          "city": "Chicago",
-          "state": "IL",
-          "zip": "60601"
-        }
-      },
-      {
-        "id": 107,
-        "name": "Sarah Brown",
-        "departmentId": 4,
-        "position": "HR Specialist",
-        "email": "sarah.brown@example.com",
-        "hireDate": "2016-02-20",
-        "salary": 60000,
-        "status": "Active",
-        "address": {
-          "street": "3456 Willow Drive",
-          "city": "San Francisco",
-          "state": "CA",
-          "zip": "94105"
-        }
-      },
-      {
-        "id": 108,
-        "name": "Michael Johnson",
-        "departmentId": 4,
-        "position": "HR Coordinator",
-        "email": "michael.johnson@example.com",
-        "hireDate": "2019-04-05",
-        "salary": 55000,
-        "status": "Active",
-        "address": {
-          "street": "8765 Elm Lane",
-          "city": "San Francisco",
-          "state": "CA",
-          "zip": "94105"
-        }
-      },
-      {
-        "id": 109,
-        "name": "Sophia Lee",
-        "departmentId": 5,
-        "position": "Lead Designer",
-        "email": "sophia.lee@example.com",
-        "hireDate": "2018-09-12",
-        "salary": 75000,
-        "status": "Active",
-        "address": {
-          "street": "1234 Cherry Boulevard",
-          "city": "Austin",
-          "state": "TX",
-          "zip": "73301"
-        }
-      },
-      {
-        "id": 110,
-        "name": "Lucas White",
-        "departmentId": 5,
-        "position": "UX/UI Designer",
-        "email": "lucas.white@example.com",
-        "hireDate": "2021-01-20",
-        "salary": 65000,
-        "status": "Active",
-        "address": {
-          "street": "9876 Pine Street",
-          "city": "Austin",
-          "state": "TX",
-          "zip": "73301"
-        }
-      }
+        {
+            "id": 101,
+            "name": "John Doe",
+            "departmentId": 1,
+            "position": "Senior Engineer",
+            "email": "john.doe@example.com",
+            "hireDate": "2018-05-12",
+            "salary": 95000,
+            "status": "Active",
+            "address": {
+              "street": "1234 Elm Street",
+              "city": "New York",
+              "state": "NY",
+              "zip": "10001"
+            }
+        },
+        {
+          "id": 102,
+          "name": "Jane Williams",
+          "departmentId": 1,
+          "position": "Software Engineer",
+          "email": "jane.williams@example.com",
+          "hireDate": "2020-08-15",
+          "salary": 80000,
+          "status": "Active",
+          "address": {
+            "street": "5678 Oak Avenue",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": "94105"
+          }
+        },
+        {
+          "id": 103,
+          "name": "Michael Clark",
+          "departmentId": 1,
+          "position": "Engineering Manager",
+          "email": "michael.clark@example.com",
+          "hireDate": "2015-04-20",
+          "salary": 120000,
+          "status": "Active",
+          "address": {
+            "street": "1234 Pine Street",
+            "city": "Chicago",
+            "state": "IL",
+            "zip": "60601"
+          }
+        },
+        {
+          "id": 104,
+          "name": "Samantha Green",
+          "departmentId": 1,
+          "position": "Junior Engineer",
+          "email": "samantha.green@example.com",
+          "hireDate": "2021-06-01",
+          "salary": 70000,
+          "status": "Active",
+          "address": {
+            "street": "4321 Maple Avenue",
+            "city": "New York",
+            "state": "NY",
+            "zip": "10001"
+          }
+        },
+        {
+          "id": 105,
+          "name": "David Wilson",
+          "departmentId": 1,
+          "position": "Test Engineer",
+          "email": "david.wilson@example.com",
+          "hireDate": "2019-09-25",
+          "salary": 75000,
+          "status": "Active",
+          "address": {
+            "street": "8765 Oak Lane",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": "94105"
+          }
+        },
+        {
+          "id": 106,
+          "name": "Olivia Taylor",
+          "departmentId": 1,
+          "position": "Software Engineer",
+          "email": "olivia.taylor@example.com",
+          "hireDate": "2020-11-15",
+          "salary": 85000,
+          "status": "Active",
+          "address": {
+            "street": "5678 Cedar Avenue",
+            "city": "Chicago",
+            "state": "IL",
+            "zip": "60601"
+          }
+        },
+        {
+          "id": 107,
+          "name": "James Smith",
+          "departmentId": 1,
+          "position": "Senior Software Engineer",
+          "email": "james.smith@example.com",
+          "hireDate": "2017-06-10",
+          "salary": 95000,
+          "status": "Active",
+          "address": {
+            "street": "1234 Maple Street",
+            "city": "Chicago",
+            "state": "IL",
+            "zip": "60601"
+          }
+        },
+        {
+          "id": 108,
+          "name": "John Smith",
+          "departmentId": 1,
+          "position": "Engineering Intern",
+          "email": "john.smith@example.com",
+          "hireDate": "2022-02-01",
+          "salary": 45000,
+          "status": "Active",
+          "address": {
+            "street": "1111 Pine Drive",
+            "city": "Austin",
+            "state": "TX",
+            "zip": "73301"
+          }
+        },
+        {
+          "id": 109,
+          "name": "Jessica Lee",
+          "departmentId": 1,
+          "position": "DevOps Engineer",
+          "email": "jessica.lee@example.com",
+          "hireDate": "2019-12-15",
+          "salary": 105000,
+          "status": "Active",
+          "address": {
+            "street": "4567 Oakwood Road",
+            "city": "Los Angeles",
+            "state": "CA",
+            "zip": "90001"
+          }
+        },
+        {
+          "id": 110,
+          "name": "Christopher Miller",
+          "departmentId": 1,
+          "position": "Backend Engineer",
+          "email": "christopher.miller@example.com",
+          "hireDate": "2020-03-10",
+          "salary": 95000,
+          "status": "Active",
+          "address": {
+            "street": "1234 Maple Street",
+            "city": "Chicago",
+            "state": "IL",
+            "zip": "60601"
+          }
+        },
+        {
+          "id": 111,
+          "name": "Emma Robinson",
+          "departmentId": 1,
+          "position": "Full Stack Developer",
+          "email": "emma.robinson@example.com",
+          "hireDate": "2021-07-05",
+          "salary": 100000,
+          "status": "Active",
+          "address": {
+            "street": "5678 Birch Road",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": "94105"
+          }
+        },
+        {
+          "id": 112,
+          "name": "Sophia Davis",
+          "departmentId": 1,
+          "position": "QA Engineer",
+          "email": "sophia.davis@example.com",
+          "hireDate": "2018-05-12",
+          "salary": 70000,
+          "status": "Active",
+          "address": {
+            "street": "6789 Elm Avenue",
+            "city": "New York",
+            "state": "NY",
+            "zip": "10001"
+          }
+        },
+        {
+          "id": 113,
+          "name": "Lucas Wright",
+          "departmentId": 1,
+          "position": "Lead Engineer",
+          "email": "lucas.wright@example.com",
+          "hireDate": "2017-11-01",
+          "salary": 110000,
+          "status": "Active",
+          "address": {
+            "street": "7890 Cedar Street",
+            "city": "Chicago",
+            "state": "IL",
+            "zip": "60601"
+          }
+        },
+        {
+          "id": 114,
+          "name": "William Harris",
+          "departmentId": 1,
+          "position": "Hardware Engineer",
+          "email": "william.harris@example.com",
+          "hireDate": "2021-04-20",
+          "salary": 85000,
+          "status": "Active",
+          "address": {
+            "street": "5432 Oak Avenue",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": "94105"
+          }
+        },
+        {
+            "id": 201,
+            "name": "Emily Davis",
+            "departmentId": 2,
+            "position": "Marketing Manager",
+            "email": "emily.davis@example.com",
+            "hireDate": "2019-07-30",
+            "salary": 70000,
+            "status": "Active",
+            "address": {
+              "street": "9876 Pine Road",
+              "city": "Los Angeles",
+              "state": "CA",
+              "zip": "90001"
+            }
+          },
+          {
+            "id": 202,
+            "name": "Daniel Brown",
+            "departmentId": 2,
+            "position": "Content Strategist",
+            "email": "daniel.brown@example.com",
+            "hireDate": "2021-03-25",
+            "salary": 60000,
+            "status": "Active",
+            "address": {
+              "street": "4321 Birch Lane",
+              "city": "Los Angeles",
+              "state": "CA",
+              "zip": "90001"
+            }
+          },
+          {
+            "id": 203,
+            "name": "Rachel Lee",
+            "departmentId": 2,
+            "position": "SEO Specialist",
+            "email": "rachel.lee@example.com",
+            "hireDate": "2020-10-05",
+            "salary": 65000,
+            "status": "Active",
+            "address": {
+              "street": "3456 Willow Drive",
+              "city": "San Francisco",
+              "state": "CA",
+              "zip": "94105"
+            }
+          },
+          {
+            "id": 204,
+            "name": "Sophia Brown",
+            "departmentId": 2,
+            "position": "Social Media Manager",
+            "email": "sophia.brown@example.com",
+            "hireDate": "2018-08-15",
+            "salary": 75000,
+            "status": "Active",
+            "address": {
+              "street": "6543 Oak Street",
+              "city": "Los Angeles",
+              "state": "CA",
+              "zip": "90001"
+            }
+          },
+          {
+            "id": 205,
+            "name": "Mason White",
+            "departmentId": 2,
+            "position": "Brand Strategist",
+            "email": "mason.white@example.com",
+            "hireDate": "2020-01-10",
+            "salary": 70000,
+            "status": "Active",
+            "address": {
+              "street": "8765 Pine Road",
+              "city": "San Francisco",
+              "state": "CA",
+              "zip": "94105"
+            }
+          },
+          {
+            "id": 301,
+            "name": "James Smith",
+            "departmentId": 3,
+            "position": "Sales Manager",
+            "email": "james.smith@example.com",
+            "hireDate": "2017-06-10",
+            "salary": 80000,
+            "status": "Active",
+            "address": {
+              "street": "1234 Maple Street",
+              "city": "Chicago",
+              "state": "IL",
+              "zip": "60601"
+            }
+          },
+          {
+            "id": 302,
+            "name": "Olivia Taylor",
+            "departmentId": 3,
+            "position": "Sales Executive",
+            "email": "olivia.taylor@example.com",
+            "hireDate": "2020-11-15",
+            "salary": 55000,
+            "status": "Active",
+            "address": {
+              "street": "5678 Cedar Avenue",
+              "city": "Chicago",
+              "state": "IL",
+              "zip": "60601"
+            }
+          },
+          {
+            "id": 303,
+            "name": "Sarah Williams",
+            "departmentId": 3,
+            "position": "Sales Representative",
+            "email": "sarah.williams@example.com",
+            "hireDate": "2019-02-28",
+            "salary": 62000,
+            "status": "Active",
+            "address": {
+              "street": "7890 Oak Avenue",
+              "city": "San Francisco",
+              "state": "CA",
+              "zip": "94105"
+            }
+          },
+          {
+            "id": 401,
+            "name": "Sarah Brown",
+            "departmentId": 4,
+            "position": "HR Specialist",
+            "email": "sarah.brown@example.com",
+            "hireDate": "2016-02-20",
+            "salary": 60000,
+            "status": "Active",
+            "address": {
+              "street": "3456 Willow Drive",
+              "city": "San Francisco",
+              "state": "CA",
+              "zip": "94105"
+            }
+          },
+          {
+            "id": 402,
+            "name": "Michael Johnson",
+            "departmentId": 4,
+            "position": "HR Coordinator",
+            "email": "michael.johnson@example.com",
+            "hireDate": "2019-04-05",
+            "salary": 55000,
+            "status": "Active",
+            "address": {
+              "street": "8765 Elm Lane",
+              "city": "San Francisco",
+              "state": "CA",
+              "zip": "94105"
+            }
+          },
+          {
+            "id": 501,
+            "name": "Sophia Lee",
+            "departmentId": 5,
+            "position": "Lead Designer",
+            "email": "sophia.lee@example.com",
+            "hireDate": "2018-09-12",
+            "salary": 75000,
+            "status": "Active",
+            "address": {
+              "street": "1234 Cherry Boulevard",
+              "city": "Austin",
+              "state": "TX",
+              "zip": "73301"
+            }
+          },
+          {
+            "id": 502,
+            "name": "Lucas White",
+            "departmentId": 5,
+            "position": "UX/UI Designer",
+            "email": "lucas.white@example.com",
+            "hireDate": "2021-01-20",
+            "salary": 65000,
+            "status": "Active",
+            "address": {
+              "street": "9876 Pine Street",
+              "city": "Austin",
+              "state": "TX",
+              "zip": "73301"
+            }
+          },
+          {
+            "id": 503,
+            "name": "Mia Collins",
+            "departmentId": 5,
+            "position": "Junior Designer",
+            "email": "mia.collins@example.com",
+            "hireDate": "2022-06-10",
+            "salary": 55000,
+            "status": "Active",
+            "address": {
+              "street": "7654 Oakwood Avenue",
+              "city": "Austin",
+              "state": "TX",
+              "zip": "73301"
+            }
+          },
+          {
+            "id": 504,
+            "name": "Ethan Parker",
+            "departmentId": 5,
+            "position": "Graphic Designer",
+            "email": "ethan.parker@example.com",
+            "hireDate": "2019-05-22",
+            "salary": 68000,
+            "status": "Active",
+            "address": {
+              "street": "2345 Maple Drive",
+              "city": "Austin",
+              "state": "TX",
+              "zip": "73301"
+            }
+          },
+          {
+            "id": 505,
+            "name": "Olivia King",
+            "departmentId": 5,
+            "position": "Product Designer",
+            "email": "olivia.king@example.com",
+            "hireDate": "2020-07-15",
+            "salary": 72000,
+            "status": "Active",
+            "address": {
+              "street": "5432 Birch Lane",
+              "city": "Austin",
+              "state": "TX",
+              "zip": "73301"
+            }
+          },
+          {
+            "id": 506,
+            "name": "Aiden Clark",
+            "departmentId": 5,
+            "position": "UI/UX Designer",
+            "email": "aiden.clark@example.com",
+            "hireDate": "2021-11-10",
+            "salary": 75000,
+            "status": "Active",
+            "address": {
+              "street": "3456 Cedar Road",
+              "city": "Austin",
+              "state": "TX",
+              "zip": "73301"
+            }
+          }
+                 
+          
+          
+          
     ]
   }
   
