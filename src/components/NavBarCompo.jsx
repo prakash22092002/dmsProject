@@ -18,7 +18,7 @@ const NavBarCompo = () => {
   ];
   return (
     <nav className="bg-[#3a9c88] p-6 shadow-md">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="mx-auto flex justify-between items-center">
         <div className="text-3xl text-white font-semibold">DMS-SYS</div>
         <div className="flex gap-10">
           {navItems.map((el, i) => {
