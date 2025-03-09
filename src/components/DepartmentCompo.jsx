@@ -1,6 +1,8 @@
 import React from "react";
 import { useDepartments } from "../context/context.jsx";
 import HourglassEmptyIcon from "@mui/icons-material/HourglassEmpty";
+import Box from "@mui/material/Box";
+import Skeleton from "@mui/material/Skeleton";
 
 const DepartmentCompo = () => {
   // this is the data got from the context
@@ -11,13 +13,21 @@ const DepartmentCompo = () => {
     isAllDepartmentDataError,
   } = useDepartments();
 
+  function allSkeletonLoadingEffect() {
+    return [...Array(9)].map((_, i) => {
+      return <Skeleton animation={"wave"} height={"3em"} key={i} />;
+    });
+  }
+
   if (isAllDepartmentsDataLoading) {
     return (
-      <div>
-        <p>
-          LOADING...
-          <HourglassEmptyIcon />
-        </p>
+      <div className="p-6">
+        <Box sx={{ width: "100%" }}>
+          <Skeleton width={"10%"} height={"3em"} animation={"pulse"} />
+          <div className="mt-4 flex flex-col gap-5">
+            {allSkeletonLoadingEffect()}
+          </div>
+        </Box>
       </div>
     );
   }
